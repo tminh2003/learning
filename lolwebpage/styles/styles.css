@@ -1,0 +1,43 @@
+body, html {
+  height: 100%;
+  position: relative;
+  z-index: -2;
+  background-color: black;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+}
+.navbar li {
+  display: inline;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+}
+
+.overview_background_image {
+  background-image: url("naafiri.jpg");
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(8px);
+}
+
+.overview_foreground_image {
+  width: 60%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.champion_title {
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
