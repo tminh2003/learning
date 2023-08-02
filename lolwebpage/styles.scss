@@ -1,3 +1,5 @@
+$imagesPath : "../images";
+
 
 body, html {
   height: 100%;
@@ -21,7 +23,7 @@ body, html {
 }
 
 .overview_background_image {
-  background-image: url("naafiri.jpg");
+  background-image: url("#{$imagesPath}/naafiri.jpg");
   position: absolute;
   z-index: -1;
   width: 100%;

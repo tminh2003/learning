@@ -19,7 +19,7 @@ body, html {
 }
 
 .overview_background_image {
-  background-image: url("naafiri.jpg");
+  background-image: url("../images/naafiri.jpg");
   position: absolute;
   z-index: -1;
   width: 100%;
