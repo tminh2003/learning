@@ -5,6 +5,10 @@ body, html {
   background-color: black;
 }
 
+div {
+  border: 1px solid white;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -16,25 +20,44 @@ body, html {
 .overview {
   display: flex;
   flex-direction: column;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.overview p {
+  color: white;
+}
+.overview .overview_info {
+  display: flex;
+  flex-direction: row;
+}
+.overview .overview_info .role_and_difficulty {
+  flex: 50%;
+  display: flex;
+  text-align: center;
+}
+.overview .overview_info .role_and_difficulty p {
+  flex: 50%;
+}
+.overview .overview_info .biography {
+  flex: 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: justify;
+}
+.overview .overview_champion_mastery {
+  border: 1px solid white;
 }
 
 .overview_background_image {
   background-image: url("../images/naafiri.jpg");
+  opacity: 50%;
   position: absolute;
   z-index: -1;
   width: 100%;
   height: 100%;
   background-size: cover;
   filter: blur(8px);
-}
-
-.overview_foreground_image {
-  width: 60%;
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .champion_title {
